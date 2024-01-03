@@ -6,12 +6,12 @@ const framework = {
   build({ filenames, files, steps }) {
     const replacementAggregator = new ReplaceFileAggregator();
     getSteps(steps, files, replacementAggregator);
-    filenames.push(hostedFileLinks.SFA_ANDROID_MAINACTIVITY_KT);
-    filenames.push(hostedFileLinks.SFA_ANDROID_ANDROIDMANIFEST_XML);
-    filenames.push(hostedFileLinks.SFA_ANDROID_BUILD_GRADLE);
-    filenames.push(hostedFileLinks.SFA_ANDROID_SETTINGS_GRADLE);
-    filenames.push(hostedFileLinks.SFA_ANDROID_STRINGS_XML);
-    filenames.push(hostedFileLinks.SFA_ANDROID_ACTIVITY_MAIN_XML);
+    filenames.push(hostedFileLinks.SFA_FLUTTER_AUTH_SERVICE_DART);
+    filenames.push(hostedFileLinks.SFA_FLUTTER_MAIN_DART);
+    filenames.push(hostedFileLinks.SFA_FLUTTER_PUBSPEC_YAML);
+    filenames.push(hostedFileLinks.SFA_FLUTTER_PODFILE);
+    filenames.push(hostedFileLinks.SFA_FLUTTER_BUILD_GRADLE);
+    filenames.push(hostedFileLinks.SFA_FLUTTER_APP_BUILD_GRADLE);
 
     return { filenames, files, steps };
   },
